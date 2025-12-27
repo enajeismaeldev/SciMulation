@@ -1,0 +1,23 @@
+using SciMulation.Forms;
+using SciMulation.Utils;
+
+namespace SciMulation
+{
+    internal static class Program
+    {
+        /// <summary>
+        ///  The main entry point for the application.
+        /// </summary>
+        [STAThread]
+        static void Main()
+        {
+            // To customize application configuration such as set high DPI settings or default font,
+            // see https://aka.ms/applicationconfiguration.
+            ApplicationConfiguration.Initialize();
+
+            AppFonts.Initialize();
+
+            Application.Run(new Layout());
+        }
+    }
+}

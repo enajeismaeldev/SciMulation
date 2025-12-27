@@ -1,0 +1,71 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Assets\fonts\PPTelegraf-Regular.otf" />
+    <None Remove="Assets\fonts\PPTelegraf-RegularOblique.otf" />
+    <None Remove="Assets\fonts\PPTelegraf-RegularSlanted.otf" />
+    <None Remove="Assets\fonts\PPTelegraf-Ultrabold.otf" />
+    <None Remove="Assets\fonts\PPTelegraf-UltraboldOblique.otf" />
+    <None Remove="Assets\fonts\PPTelegraf-UltraboldSlanted.otf" />
+    <None Remove="Assets\fonts\PPTelegraf-Ultralight.otf" />
+    <None Remove="Assets\fonts\PPTelegraf-UltralightOblique.otf" />
+    <None Remove="Assets\fonts\PPTelegraf-UltralightSlanted.otf" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Assets\fonts\PPTelegraf-Regular.otf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\fonts\PPTelegraf-RegularOblique.otf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\fonts\PPTelegraf-RegularSlanted.otf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\fonts\PPTelegraf-Ultrabold.otf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\fonts\PPTelegraf-UltraboldOblique.otf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\fonts\PPTelegraf-UltraboldSlanted.otf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Assets\fonts\PPTelegraf-Ultralight.otf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\fonts\PPTelegraf-UltralightOblique.otf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\fonts\PPTelegraf-UltralightSlanted.otf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Properties\Resources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
+</Project>
