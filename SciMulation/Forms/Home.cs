@@ -8,6 +8,7 @@ namespace SciMulation.Forms
         {
             InitializeComponent();
 
+            DoubleBuffered = true;
             BackColor = Color.FromArgb(245, 255, 255);
 
             label_Title.Font = AppFonts.Get(90f, FontWeight.Ultrabold, FontSlant.Regular);

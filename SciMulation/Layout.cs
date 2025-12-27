@@ -1,4 +1,5 @@
 ﻿using SciMulation.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace SciMulation
 {
@@ -10,9 +11,21 @@ namespace SciMulation
 
             IsMdiContainer = true;
             BackColor = Color.FromArgb(245, 255, 255);
+            ControlBox = false;
+            MinimizeBox = false;
+            MaximizeBox = false;
+
+            SetStyle(
+                ControlStyles.AllPaintingInWmPaint |
+                ControlStyles.UserPaint |
+                ControlStyles.OptimizedDoubleBuffer,
+                true);
+            UpdateStyles();
 
             OpenForm<Home>();
         }
+
+        public string CurrentMode { get; set; } = "Windowed";
 
         public void OpenForm<T>() where T : Form, new()
         {

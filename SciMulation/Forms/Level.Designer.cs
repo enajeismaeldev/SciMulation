@@ -31,8 +31,8 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Level));
             tableLayoutPanel1 = new TableLayoutPanel();
             label_Title = new Label();
-            imageButton1 = new SciMulation.Assets.controls.ImageButton();
-            imageButton2 = new SciMulation.Assets.controls.ImageButton();
+            button_Grade7 = new SciMulation.Assets.controls.ImageButton();
+            button_Grade8 = new SciMulation.Assets.controls.ImageButton();
             button_Exit = new SciMulation.Assets.controls.ImageButton();
             tableLayoutPanel1.SuspendLayout();
             SuspendLayout();
@@ -45,8 +45,8 @@
             tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
             tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
             tableLayoutPanel1.Controls.Add(label_Title, 0, 1);
-            tableLayoutPanel1.Controls.Add(imageButton1, 0, 3);
-            tableLayoutPanel1.Controls.Add(imageButton2, 1, 3);
+            tableLayoutPanel1.Controls.Add(button_Grade7, 0, 3);
+            tableLayoutPanel1.Controls.Add(button_Grade8, 1, 3);
             tableLayoutPanel1.Controls.Add(button_Exit, 1, 0);
             tableLayoutPanel1.Dock = DockStyle.Fill;
             tableLayoutPanel1.Location = new Point(0, 0);
@@ -74,37 +74,39 @@
             label_Title.Text = "Grade Level";
             label_Title.TextAlign = ContentAlignment.MiddleCenter;
             // 
-            // imageButton1
+            // button_Grade7
             // 
-            imageButton1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom;
-            imageButton1.BackColor = Color.Transparent;
-            imageButton1.BackgroundImage = Properties.Resources.button_grade7;
-            imageButton1.BackgroundImageLayout = ImageLayout.Center;
-            imageButton1.FlatAppearance.BorderSize = 0;
-            imageButton1.FlatStyle = FlatStyle.Flat;
-            imageButton1.Location = new Point(7, 280);
-            imageButton1.Name = "imageButton1";
-            imageButton1.NormalImage = Properties.Resources.button_grade7;
-            imageButton1.PressedImage = Properties.Resources.button_grade7_pressed;
-            imageButton1.Size = new Size(586, 231);
-            imageButton1.TabIndex = 6;
-            imageButton1.UseVisualStyleBackColor = false;
+            button_Grade7.Anchor = AnchorStyles.Top | AnchorStyles.Bottom;
+            button_Grade7.BackColor = Color.Transparent;
+            button_Grade7.BackgroundImage = Properties.Resources.button_grade7;
+            button_Grade7.BackgroundImageLayout = ImageLayout.Center;
+            button_Grade7.FlatAppearance.BorderSize = 0;
+            button_Grade7.FlatStyle = FlatStyle.Flat;
+            button_Grade7.Location = new Point(7, 280);
+            button_Grade7.Name = "button_Grade7";
+            button_Grade7.NormalImage = Properties.Resources.button_grade7;
+            button_Grade7.PressedImage = Properties.Resources.button_grade7_pressed;
+            button_Grade7.Size = new Size(586, 231);
+            button_Grade7.TabIndex = 6;
+            button_Grade7.UseVisualStyleBackColor = false;
+            button_Grade7.Click += button_Grade7_Click_1;
             // 
-            // imageButton2
+            // button_Grade8
             // 
-            imageButton2.Anchor = AnchorStyles.Top | AnchorStyles.Bottom;
-            imageButton2.BackColor = Color.Transparent;
-            imageButton2.BackgroundImage = Properties.Resources.button_grade8;
-            imageButton2.BackgroundImageLayout = ImageLayout.Center;
-            imageButton2.FlatAppearance.BorderSize = 0;
-            imageButton2.FlatStyle = FlatStyle.Flat;
-            imageButton2.Location = new Point(607, 280);
-            imageButton2.Name = "imageButton2";
-            imageButton2.NormalImage = Properties.Resources.button_grade8;
-            imageButton2.PressedImage = Properties.Resources.button_grade8_pressed;
-            imageButton2.Size = new Size(586, 231);
-            imageButton2.TabIndex = 7;
-            imageButton2.UseVisualStyleBackColor = false;
+            button_Grade8.Anchor = AnchorStyles.Top | AnchorStyles.Bottom;
+            button_Grade8.BackColor = Color.Transparent;
+            button_Grade8.BackgroundImage = Properties.Resources.button_grade8;
+            button_Grade8.BackgroundImageLayout = ImageLayout.Center;
+            button_Grade8.FlatAppearance.BorderSize = 0;
+            button_Grade8.FlatStyle = FlatStyle.Flat;
+            button_Grade8.Location = new Point(607, 280);
+            button_Grade8.Name = "button_Grade8";
+            button_Grade8.NormalImage = Properties.Resources.button_grade8;
+            button_Grade8.PressedImage = Properties.Resources.button_grade8_pressed;
+            button_Grade8.Size = new Size(586, 231);
+            button_Grade8.TabIndex = 7;
+            button_Grade8.UseVisualStyleBackColor = false;
+            button_Grade8.Click += button_Grade8_Click;
             // 
             // button_Exit
             // 
@@ -145,8 +147,8 @@
 
         private TableLayoutPanel tableLayoutPanel1;
         private Label label_Title;
-        private Assets.controls.ImageButton imageButton1;
-        private Assets.controls.ImageButton imageButton2;
+        private Assets.controls.ImageButton button_Grade7;
+        private Assets.controls.ImageButton button_Grade8;
         private Assets.controls.ImageButton button_Exit;
     }
 }

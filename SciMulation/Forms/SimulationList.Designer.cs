@@ -1,6 +1,6 @@
 ﻿namespace SciMulation.Forms
 {
-    partial class Settings
+    partial class SimulationList
     {
         /// <summary>
         /// Required designer variable.
@@ -28,11 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Settings));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SimulationList));
             tableLayoutPanel1 = new TableLayoutPanel();
-            button_Mode = new SciMulation.Assets.controls.ImageButton();
             label_Title = new Label();
-            label_Fullscreen = new Label();
             button_Exit = new SciMulation.Assets.controls.ImageButton();
             tableLayoutPanel1.SuspendLayout();
             SuspendLayout();
@@ -41,66 +39,36 @@
             // 
             tableLayoutPanel1.BackColor = Color.White;
             tableLayoutPanel1.BackgroundImage = (Image)resources.GetObject("tableLayoutPanel1.BackgroundImage");
-            tableLayoutPanel1.ColumnCount = 1;
-            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 100F));
-            tableLayoutPanel1.Controls.Add(button_Mode, 0, 3);
+            tableLayoutPanel1.ColumnCount = 2;
+            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
+            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
             tableLayoutPanel1.Controls.Add(label_Title, 0, 1);
-            tableLayoutPanel1.Controls.Add(label_Fullscreen, 0, 2);
-            tableLayoutPanel1.Controls.Add(button_Exit, 0, 0);
+            tableLayoutPanel1.Controls.Add(button_Exit, 1, 0);
             tableLayoutPanel1.Dock = DockStyle.Fill;
             tableLayoutPanel1.Location = new Point(0, 0);
             tableLayoutPanel1.Name = "tableLayoutPanel1";
             tableLayoutPanel1.RowCount = 5;
             tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Absolute, 97F));
-            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Absolute, 95F));
+            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Absolute, 100F));
             tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Absolute, 80F));
-            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Absolute, 99F));
+            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Absolute, 237F));
             tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
             tableLayoutPanel1.Size = new Size(1200, 768);
             tableLayoutPanel1.TabIndex = 5;
-            // 
-            // button_Mode
-            // 
-            button_Mode.Anchor = AnchorStyles.Top | AnchorStyles.Bottom;
-            button_Mode.BackColor = Color.Transparent;
-            button_Mode.BackgroundImage = Properties.Resources.button_windowed;
-            button_Mode.BackgroundImageLayout = ImageLayout.Center;
-            button_Mode.FlatAppearance.BorderSize = 0;
-            button_Mode.FlatStyle = FlatStyle.Flat;
-            button_Mode.Location = new Point(442, 275);
-            button_Mode.Name = "button_Mode";
-            button_Mode.NormalImage = Properties.Resources.button_windowed;
-            button_Mode.PressedImage = Properties.Resources.button_windowed_pressed;
-            button_Mode.Size = new Size(316, 93);
-            button_Mode.TabIndex = 7;
-            button_Mode.UseVisualStyleBackColor = false;
-            button_Mode.Click += button_Mode_Click;
             // 
             // label_Title
             // 
             label_Title.Anchor = AnchorStyles.Left | AnchorStyles.Right;
             label_Title.AutoSize = true;
             label_Title.BackColor = Color.Transparent;
+            tableLayoutPanel1.SetColumnSpan(label_Title, 2);
             label_Title.Font = new Font("Segoe UI", 48F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label_Title.Location = new Point(3, 101);
+            label_Title.Location = new Point(3, 104);
             label_Title.Name = "label_Title";
             label_Title.Size = new Size(1194, 86);
             label_Title.TabIndex = 0;
-            label_Title.Text = "Settings";
+            label_Title.Text = "Simulation";
             label_Title.TextAlign = ContentAlignment.MiddleCenter;
-            // 
-            // label_Fullscreen
-            // 
-            label_Fullscreen.Anchor = AnchorStyles.Left | AnchorStyles.Right;
-            label_Fullscreen.AutoSize = true;
-            label_Fullscreen.BackColor = Color.Transparent;
-            label_Fullscreen.Font = new Font("Segoe UI", 36F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label_Fullscreen.Location = new Point(3, 199);
-            label_Fullscreen.Name = "label_Fullscreen";
-            label_Fullscreen.Size = new Size(1194, 65);
-            label_Fullscreen.TabIndex = 1;
-            label_Fullscreen.Text = "Screen Mode";
-            label_Fullscreen.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // button_Exit
             // 
@@ -114,11 +82,11 @@
             button_Exit.NormalImage = Properties.Resources.button_exit;
             button_Exit.PressedImage = Properties.Resources.button_exit_pressed;
             button_Exit.Size = new Size(92, 91);
-            button_Exit.TabIndex = 2;
+            button_Exit.TabIndex = 8;
             button_Exit.UseVisualStyleBackColor = true;
             button_Exit.Click += button_Exit_Click;
             // 
-            // Settings
+            // SimulationList
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -126,9 +94,9 @@
             Controls.Add(tableLayoutPanel1);
             FormBorderStyle = FormBorderStyle.None;
             MinimumSize = new Size(1200, 768);
-            Name = "Settings";
-            Text = "Settings";
-            Shown += Settings_Shown;
+            Name = "SimulationList";
+            StartPosition = FormStartPosition.CenterParent;
+            Text = "SimulationList";
             tableLayoutPanel1.ResumeLayout(false);
             tableLayoutPanel1.PerformLayout();
             ResumeLayout(false);
@@ -138,8 +106,6 @@
 
         private TableLayoutPanel tableLayoutPanel1;
         private Label label_Title;
-        private Label label_Fullscreen;
         private Assets.controls.ImageButton button_Exit;
-        private Assets.controls.ImageButton button_Mode;
     }
 }

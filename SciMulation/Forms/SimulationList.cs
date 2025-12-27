@@ -2,9 +2,9 @@
 
 namespace SciMulation.Forms
 {
-    public partial class Level : Form
+    public partial class SimulationList : Form
     {
-        public Level()
+        public SimulationList()
         {
             InitializeComponent();
 
@@ -19,24 +19,6 @@ namespace SciMulation.Forms
             if (MdiParent is Layout mdi)
             {
                 mdi.OpenForm<Home>();
-                Close();
-            }
-        }
-
-        private void button_Grade7_Click_1(object sender, EventArgs e)
-        {
-            if (MdiParent is Layout mdi)
-            {
-                mdi.OpenForm<SimulationList>();
-                Close();
-            }
-        }
-
-        private void button_Grade8_Click(object sender, EventArgs e)
-        {
-            if (MdiParent is Layout mdi)
-            {
-                mdi.OpenForm<SimulationList>();
                 Close();
             }
         }

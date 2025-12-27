@@ -113,6 +113,26 @@ namespace SciMulation.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap button_fullscreen {
+            get {
+                object obj = ResourceManager.GetObject("button_fullscreen", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap button_fullscreen_pressed {
+            get {
+                object obj = ResourceManager.GetObject("button_fullscreen_pressed", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap button_grade7 {
             get {
                 object obj = ResourceManager.GetObject("button_grade7", resourceCulture);
@@ -186,6 +206,26 @@ namespace SciMulation.Properties {
         internal static System.Drawing.Bitmap button_start_pressed {
             get {
                 object obj = ResourceManager.GetObject("button_start_pressed", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap button_windowed {
+            get {
+                object obj = ResourceManager.GetObject("button_windowed", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap button_windowed_pressed {
+            get {
+                object obj = ResourceManager.GetObject("button_windowed_pressed", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

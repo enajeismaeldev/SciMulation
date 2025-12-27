@@ -133,6 +133,12 @@
   <data name="button_exit_pressed" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\button_exit_pressed.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="button_fullscreen" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\button_fullscreen.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="button_fullscreen_pressed" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\button_fullscreen_pressed.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="button_grade7" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\button_grade7.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -156,5 +162,11 @@
   </data>
   <data name="button_start_pressed" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\button_start_pressed.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="button_windowed" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\button_windowed.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="button_windowed_pressed" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\button_windowed_pressed.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
