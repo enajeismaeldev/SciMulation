@@ -128,6 +128,7 @@ namespace SciMulation.Forms
             button_Credits.Size = new Size(280, 97);
             button_Credits.TabIndex = 3;
             button_Credits.UseVisualStyleBackColor = false;
+            button_Credits.Click += button_Credits_Click;
             // 
             // label_Footer
             // 

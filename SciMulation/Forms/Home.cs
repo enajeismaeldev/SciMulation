@@ -32,5 +32,14 @@ namespace SciMulation.Forms
                 Close();
             }
         }
+
+        private void button_Credits_Click(object sender, EventArgs e)
+        {
+            if (MdiParent is Layout mdi)
+            {
+                mdi.OpenForm<Credits>();
+                Close();
+            }
+        }
     }
 }
